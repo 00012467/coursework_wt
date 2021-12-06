@@ -179,7 +179,7 @@ button:hover{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin: 5rem 0 100rem 0;
+    margin: 2rem 0 5rem 0;
     width: 100%;
 }
 
@@ -200,6 +200,7 @@ button:hover{
 .course:hover{
     cursor: pointer;
     background-color: #07b189;
+    transform: scale(1.05);
     transition: 0.2s ease;
     color: white;
 }
@@ -219,4 +220,95 @@ button:hover{
 
 .course > img{
     width: 100px;
+}
+
+.advantages{
+    width: 1100px;
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    
+}
+.container-advantages{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.title-advantages{
+    display: flex;
+}
+
+.title-advantages > h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    width: 50%;
+    padding-left: 50px;
+}
+
+.all-adv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem 0 5rem 0;
+    width: 100%;
+}
+
+.adv{
+    flex: 1 1 21rem;
+    margin: 10px 10px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    border-radius: 20px;
+    align-self: normal;
+    
+    color: white;
+}
+.adv1{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image5.jpg);
+    background-size: cover;
+}
+.adv2{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image6.jpg);
+    background-size: cover;
+}
+.adv3{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image7.jpg);
+    background-size: cover;
+}
+.adv4{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image8.jpg);
+    background-size: cover;
+}
+.adv5{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image9.jpg);
+    background-size: cover;
+}
+.adv6{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image10.jpg);
+    background-size: cover;
+}
+.adv:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    color: white;
+}
+
+.adv > p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.adv > img{
+    width: 100px;
+    height: auto;
 }
