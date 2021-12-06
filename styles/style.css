@@ -1,3 +1,11 @@
+/*
+colors:
+green - 07b189 rgba(7,177,137,1)
+blue - 003f6c rgba(0,63,108,1)
+darkblue - 002d3b rgba(0,45,59,1)
+red - ff3939 rgba(255,57,57,1)
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap');
 
 * {
@@ -9,8 +17,8 @@
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    color: black;
+    font-size: 1rem;
+    color: #002d3b;
     text-decoration: none;
 }
 
@@ -18,7 +26,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 10%;
 }
 
 .logo {
@@ -39,23 +47,105 @@ header{
 }
 
 .nav_links li a:hover {
-    color: red;
+    color: #ff3939;
 }
 
 button{
     padding: 9px 25px;
     color: white;
-    background-color: rgba(0,136,169,1);
+    background-color: rgba(0,63,108,1);
     border:none;
-    border-radius: 50px;
+    border-radius: 10px;
     cursor: pointer ;
     transition: all 0.3s ease 0s;
 }
 
 button:hover{
-    background-color: rgba(0,136,169,0.8);    
+    background-color: rgba(7,177,137,1);    
 }
 
 .logo{
-    width: 70px;
+    width: 40px;
+}
+
+#slider,
+.wrap,
+.slide-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrap {
+    position: relative;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url("../images/image.jpg");
+}
+.slide2 {
+    background-image: url("../images/image2.jpg");
+}
+.slide3 {
+    background-image: url("../images/image3.jpg");
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-top: 300px;
+    font-size: 3rem;
+    color: #07b189;
+    text-shadow: 1px 2px white;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 15px 20px 15px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-left:hover {
+    border-width: 15px 20px 15px 0;
+    border-color: transparent #07b189 transparent transparent;
+    transition: 0.2s ease;
+}
+
+#arrow-right {
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+}
+
+#arrow-right:hover {
+    border-width: 15px 0 15px 20px;
+    border-color: transparent #07b189 transparent #07b189;
+    transition: 0.2s ease;
 }
