@@ -14,6 +14,10 @@ red - ff3939 rgba(255,57,57,1)
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -449,4 +453,37 @@ form > .button-application > input:hover{
 .location > .location-container > .location-frame > iframe{
     width: 100%;
     height: 100%;
+}
+
+footer{
+    bottom: 0px;
+    width: 100%;
+    background-color: #003f6c;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    height: auto;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+    width: 200px;
+}
+
+.box > h2{
+    
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.box > .content-footer{
+    margin: 20px 0 0;
 }
