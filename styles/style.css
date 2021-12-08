@@ -278,8 +278,19 @@ header{
     padding: 1.5rem;
     border-radius: 20px;
     align-self: normal;
-    
     color: white;
+}
+
+.onClick{
+    opacity: 0.2;
+    visibility: visible;
+    transition: all 0.2s ease;
+}
+
+.onClick.show{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s ease;
 }
 
 .adv1{
@@ -309,12 +320,15 @@ header{
 .adv:hover{
     transform: scale(1.05);
     transition: 0.2s ease;
-    color: white;
+    cursor: pointer;
 }
-
+.adv > h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;  
+}
 .adv > p{
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 1rem;
 }
 

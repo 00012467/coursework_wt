@@ -50,6 +50,25 @@ arrowRight.addEventListener("click", function() {
 
 startSlide();
 
+// shows the phrase when the page is load
 window.onload = function(){
   alert("This website was created to fulfill Web Technology module’s requirements and does not represent an actual company or service")
+}
+
+// to make visible/invisble blocks on click
+var showOnClick = document.getElementsByClassName("onClick"); // stored every class with "onClick"
+var previousState;
+
+for(var i=0; i < showOnClick.length; i++){
+  showOnClick[i].onclick = function() { // when clicked function starts
+    var classes = this.classList;
+    if (classes.contains("show")) {  // checks if it has show in class
+      classes.remove("show");
+    } else {
+      if (previousState != null){
+      previousState.classList.remove("show")};
+    previousState = this;
+      classes.add("show");
+    }
+  }
 }
