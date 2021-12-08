@@ -45,10 +45,7 @@ header{
     display: inline-block;
     padding: 0px 20px;
 }
-.nav > .nav_links > .home-a > a{
-    color: #ff3939;
-    text-decoration: underline;
-}
+
 .nav_links li a {
     transition: all 0.3s ease 0s;
 }
@@ -74,89 +71,50 @@ header{
 .logo{
     width: 40px;
 }
+.course-describtion{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 
-#slider,
-.wrap,
-.slide-content {
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
-}
-
-.wrap {
-    position: relative;
-}
-
-.slide {
+    background: url(../images/image11.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: white;
+    font-family: "Montserrat", sans-serif;
 }
-
-.slide1 {
-    background-image: url("../images/image.jpg");
-}
-.slide2 {
-    background-image: url("../images/image2.jpg");
-}
-.slide3 {
-    background-image: url("../images/image3.jpg");
-}
-
-.slide-content {
+.course-describtion > .left-side{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
-
-.slide-content span {
-    font-family: "Montserrat", sans-serif;
+.course-describtion > .left-side > h1{
     font-weight: 500;
-    margin-top: 300px;
-    font-size: 3rem;
-    color: #07b189;
-    text-shadow: 1px 2px white;
+    font-size: 3.5em;
+    padding-bottom: 20px;
+}
+.course-describtion > .left-side > p{
+    font-weight: 200;
+    font-size: 1em;
+}
+.cta-2{
+    text-align: center;
+    margin-top: 15px;
+    padding: 9px 25px;
+    color: white;
+    background-color: rgba(0,63,108,1);
+    border:none;
+    border-radius: 10px;
+    cursor: pointer ;
+    transition: all 0.3s ease 0s;
 }
 
-.arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 60%;
-    width: 0;
-    height: 0;
-    border-style: solid;
+.cta-2:hover{
+    background-color: rgba(7,177,137,1);    
 }
-
-#arrow-left {
-    border-width: 15px 20px 15px 0;
-    border-color: transparent #fff transparent transparent;
-    left: 0;
-    margin-left: 30px;
+.course-describtion > .right-side > img{
+    width: 100px;
 }
-
-#arrow-left:hover {
-    border-width: 15px 20px 15px 0;
-    border-color: transparent #07b189 transparent transparent;
-    transition: 0.2s ease;
-}
-
-#arrow-right {
-    border-width: 15px 0 15px 20px;
-    border-color: transparent transparent transparent #fff;
-    right: 0;
-    margin-right: 30px;
-}
-
-#arrow-right:hover {
-    border-width: 15px 0 15px 20px;
-    border-color: transparent #07b189 transparent #07b189;
-    transition: 0.2s ease;
-}
-
 .courses{
     width: 1100px;
     max-width: 100%;
@@ -228,101 +186,6 @@ header{
 .course > img{
     width: 100px;
 }
-
-.advantages{
-    width: 1100px;
-    max-width: 100%;
-
-    margin: 0 auto;
-
-}
-
-.container-advantages{
-    width: 100%;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-}
-
-.title-advantages{
-    display: flex;
-}
-
-.title-advantages > h1{
-    font-family: "Montserrat", sans-serif;
-    font-size: 3.5rem;
-    font-weight: 500;
-    width: 50%;
-    padding-left: 50px;
-    color: #002d3b;
-}
-
-.all-adv{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 2rem 0 5rem 0;
-    width: 100%;
-}
-
-.adv{
-    flex: 1 1 21rem;
-    margin: 10px 10px;
-    height: 200px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 15px 15px rgba(0,0,0,0.1);
-    padding: 1.5rem;
-    border-radius: 20px;
-    align-self: normal;
-    
-    color: white;
-}
-
-.adv1{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image5.jpg);
-    background-size: cover;
-}
-.adv2{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image6.jpg);
-    background-size: cover;
-}
-.adv3{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image7.jpg);
-    background-size: cover;
-}
-.adv4{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image8.jpg);
-    background-size: cover;
-}
-.adv5{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image9.jpg);
-    background-size: cover;
-}
-.adv6{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/image10.jpg);
-    background-size: cover;
-}
-.adv:hover{
-    transform: scale(1.05);
-    transition: 0.2s ease;
-    color: white;
-}
-
-.adv > p{
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
-    padding: 1rem;
-}
-
-.adv > img{
-    width: 100px;
-    height: auto;
-}
-
 .regform{
     display: flex;
     height: 100vh;
@@ -424,40 +287,6 @@ form > .button-application > input:hover{
         overflow-y: scroll;
     }
 }
-
-.location{    
-    display: flex;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.location > .location-container{
-    max-width: 700px;
-    width: 100%;
-    padding: 35px 80px;
-    border-radius: 5px;
-    flex-wrap: wrap;
-}
-.location > .location-container > .title > h1{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-.location > .location-container > .location-frame{
-    width: 100%;
-    height: auto;
-    flex:50%;
-}
-
-.location > .location-container > .location-frame > iframe{
-    width: 100%;
-    height: 100%;
-}
-
 footer{
     bottom: 0px;
     width: 100%;
