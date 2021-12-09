@@ -46,8 +46,10 @@ header{
     padding: 0px 20px;
 }
 .nav > .nav_links > .home-a > a{
-    color: #ff3939;
-    text-decoration: underline;
+    background-color: #ff3939;
+    padding: 7px 15px;
+    color: white;
+    border-radius: 8px;
 }
 .nav_links li a {
     transition: all 0.3s ease 0s;
@@ -83,6 +85,7 @@ header{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
+    transition: all 0.3s ease;
 }
 
 .wrap {
